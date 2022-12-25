@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+  text-align: right;
+  margin-right: 20px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 220px;
+  width: 550px;
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: 5px 8px 10px;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, rgb(246, 246, 22), rgb(34, 115, 255));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*CORPO DO RELOGIO*/
+
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 220px;
+  width: 550px;
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: 5px 8px 10px;
+}
+
+/*RELOGIO*/
+
+.relogio div {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column; /*coluna*/
+  align-items: center; /*centralizar o texto*/
+  justify-content: center; /*centralizar*/
+  color: rgb(16, 1, 130, 0.821);
+  background-color: black;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 1);
+  letter-spacing: 5px; /*espaçamento das letras*/
+  border-radius: 10px;
+  background: transparent;
+}
+
+.relogio span {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.relogio span.tempo {
+  font-size: 20px;
+}
+
+.relogio {
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.relogio:hover {
+  -webkit-transform: scale(0.2);
+  transform: scale(1.3);
+}
+
+.relogio div {
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.relogio div:hover {
+  -webkit-transform: scale(0.2);
+  transform: scale(1.1);
+}
+
+.h1 div {
+  font-size: 600px;
+}
